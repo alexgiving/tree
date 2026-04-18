@@ -1,0 +1,67 @@
+[
+    {
+        "name": "John Doe",
+        "years": "1940-2020",
+        "birthPlace": "New York, USA",
+        "burialPlace": "Los Angeles, USA",
+        "comment": "Loving father and husband.",
+        "relationships": {
+            "mother": null,
+            "father": null,
+            "siblings": ["Jane Doe", "Mark Doe"],
+            "children": ["Emily Doe", "Michael Doe"]
+        }
+    },
+    {
+        "name": "Jane Doe",
+        "years": "1945-",
+        "birthPlace": "Chicago, USA",
+        "burialPlace": null,
+        "comment": "Caring mother and grandmother.",
+        "relationships": {
+            "mother": null,
+            "father": null,
+            "siblings": [],
+            "children": ["Emily Doe", "Michael Doe"]
+        }
+    },
+    {
+        "name": "Mark Doe",
+        "years": "1970-",
+        "birthPlace": "Los Angeles, USA",
+        "burialPlace": null,
+        "comment": "Adventurous uncle.",
+        "relationships": {
+            "mother": "Jane Doe",
+            "father": "John Doe",
+            "siblings": ["Emily Doe"],
+            "children": []
+        }
+    },
+    {
+        "name": "Emily Doe",
+        "years": "1995-",
+        "birthPlace": "San Francisco, USA",
+        "burialPlace": null,
+        "comment": "Aspiring artist.",
+        "relationships": {
+            "mother": "Jane Doe",
+            "father": "John Doe",
+            "siblings": ["Michael Doe"],
+            "children": []
+        }
+    },
+    {
+        "name": "Michael Doe",
+        "years": "1998-",
+        "birthPlace": "San Francisco, USA",
+        "burialPlace": null,
+        "comment": "Tech enthusiast.",
+        "relationships": {
+            "mother": "Jane Doe",
+            "father": "John Doe",
+            "siblings": ["Emily Doe"],
+            "children": []
+        }
+    }
+]
