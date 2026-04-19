@@ -1,67 +1,722 @@
-[
+{
+  "people": [
     {
-        "name": "John Doe",
-        "years": "1940-2020",
-        "birthPlace": "New York, USA",
-        "burialPlace": "Los Angeles, USA",
-        "comment": "Loving father and husband.",
-        "relationships": {
-            "mother": null,
-            "father": null,
-            "siblings": ["Jane Doe", "Mark Doe"],
-            "children": ["Emily Doe", "Michael Doe"]
-        }
+      "id": "markov-fedor-1800",
+      "name": "Фёдор Марков (Мареев)",
+      "years": "около 1800-1890",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": "Фамилия Марковы (Маревы) заменена на Новиковы после переезда семьи из села Головино (г. Москва) в село Воскресенское (Шуйский уезд) и после отмены крепостного права",
+      "relationships": {
+        "partner": "wife-fedor"
+      }
     },
     {
-        "name": "Jane Doe",
-        "years": "1945-",
-        "birthPlace": "Chicago, USA",
-        "burialPlace": null,
-        "comment": "Caring mother and grandmother.",
-        "relationships": {
-            "mother": null,
-            "father": null,
-            "siblings": [],
-            "children": ["Emily Doe", "Michael Doe"]
-        }
+      "id": "wife-fedor",
+      "name": "Жена Фёдора Маркова",
+      "years": "около 1800-1900",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": "",
+      "relationships": {
+        "partner": "markov-fedor-1800"
+      }
     },
     {
-        "name": "Mark Doe",
-        "years": "1970-",
-        "birthPlace": "Los Angeles, USA",
-        "burialPlace": null,
-        "comment": "Adventurous uncle.",
-        "relationships": {
-            "mother": "Jane Doe",
-            "father": "John Doe",
-            "siblings": ["Emily Doe"],
-            "children": []
-        }
+      "id": "novikov-ivan-1840",
+      "name": "Иван Фёдорович Новиков",
+      "years": "около 1840-1910",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": "",
+      "relationships": {
+        "partner": "novikov-secletiya-1840",
+        "parents": [
+          "markov-fedor-1800",
+          "wife-fedor"
+        ]
+      }
     },
     {
-        "name": "Emily Doe",
-        "years": "1995-",
-        "birthPlace": "San Francisco, USA",
-        "burialPlace": null,
-        "comment": "Aspiring artist.",
-        "relationships": {
-            "mother": "Jane Doe",
-            "father": "John Doe",
-            "siblings": ["Michael Doe"],
-            "children": []
-        }
+      "id": "novikov-secletiya-1840",
+      "name": "Секлетия Новикова (Симонова)",
+      "years": "около 1840-1910",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner" : "novikov-ivan-1840",
+        "parents": []
+      }
     },
     {
-        "name": "Michael Doe",
-        "years": "1998-",
-        "birthPlace": "San Francisco, USA",
-        "burialPlace": null,
-        "comment": "Tech enthusiast.",
-        "relationships": {
-            "mother": "Jane Doe",
-            "father": "John Doe",
-            "siblings": ["Emily Doe"],
-            "children": []
-        }
+      "id": "novikov-dmitriy-1840",
+      "name": "Дмитрий Фёдорович Новиков",
+      "years": "около 1840-1910",
+      "relationships": {
+        "parents": [
+          "markov-fedor-1800",
+          "wife-fedor"
+        ]
+      }
+    },
+    {
+      "id": "novikova-ilya-1885",
+      "name": "Илья (Емельян) Иванович Новикова",
+      "years": "около 1885 - 27.01.1904",
+      "comment": "матрос 1 статьи ЗОВО 4 ст. и медаль Nº 97789. погиб на крейсере <<Варяг>> во время Русско-Японской войны",
+      "relationships": {
+        "parents": [
+          "novikov-ivan-1840",
+          "novikov-secletiya-1840"
+        ]
+      }
+    },
+    {
+      "id": "novikova-aleksandra-1885",
+      "name": "Александра Ивановна Новикова",
+      "years": "около 1885-1960",
+      "relationships": {
+        "parents": [
+          "novikov-ivan-1840",
+          "novikov-secletiya-1840"
+        ]
+      }
+    },
+    {
+      "id": "novikova-fekla-1840",
+      "name": "Фёкла Фёдоровна Новикова",
+      "years": "около 1840-1910",
+      "relationships": {
+        "parents": [
+          "markov-fedor-1800",
+          "wife-fedor"
+        ]
+      }
+    },
+
+    {
+      "id": "barlou",
+      "name": "Ричард Барлоу",
+      "years": null,
+      "comment": "управляющий на фабрике в селе Новые Горки Ивановской области",
+      "relationships": {
+        "parents": [
+        ]
+      }
+    },
+    {
+      "id": "novikova-stepanida-1884",
+      "name": "Степанида Павловна Новикова (Слезина)",
+      "years": "1884-1971",
+      "comment": "Внебрачная дочь Барлоу, приемная дочь Слезина Павла",
+      "relationships": {
+        "parents": [
+          "barlou"
+        ]
+      }
+    },
+    {
+      "id": "novikov-petr-1886",
+      "name": "Пётр Иванович Новиков",
+      "years": "1886-1959",
+      "relationships": {
+        "partner": "novikova-stepanida-1884",
+        "parents": [
+          "novikov-ivan-1840",
+          "novikov-secletiya-1840"
+        ]
+      }
+    },
+    {
+      "id": "novikov-vasiliy-1885",
+      "name": "Василий Иванович Новиков",
+      "years": "около 1885-1960",
+      "relationships": {
+        "parents": [
+          "novikov-ivan-1840",
+          "novikov-secletiya-1840"
+        ]
+      }
+    },
+    {
+      "id": "novikov-fedor-1885",
+      "name": "Фёдор Иванович Новиков",
+      "years": "около 1885-1960",
+      "relationships": {
+        "parents": [
+          "novikov-ivan-1840",
+          "novikov-secletiya-1840"
+        ]
+      }
+    },
+    {
+      "id": "trutnev-igor-1969",
+      "name": "Игорь Альбертович Трутнев",
+      "years": "1969",
+      "birthPlace": "Ковров",
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "trutneva-tatyana-1976",
+        "parents": ["trutnev-albert-1941", "trutneva-nataliya-1980"]
+      }
+    },
+    {
+      "id": "trutnev-aleksandr-1980",
+      "name": "Александр Альбертович Трутнев",
+      "years": "22.05.1980",
+      "birthPlace": "Ковров",
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": null,
+        "parents": ["trutnev-albert-1941", "trutneva-nataliya-1980"]
+      }
+    },
+    {
+      "id": "trutneva-nataliya-1980",
+      "name": "Наталья Александровна Трутнева (Молыгина)",
+      "years": "19.02.1947",
+      "birthPlace": "Ковров",
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": null,
+        "parents": []
+      }
+    },
+    {
+      "id": "trutnev-albert-1941",
+      "name": "Альберт Сергеевич Трутнев",
+      "years": "13.02.1941 - 2001",
+      "birthPlace": "Ковров",
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "trutneva-nataliya-1980",
+        "parents": []
+      }
+    },
+    {
+      "id": "baranchicov-boris-1951",
+      "name": "Борис Николаевич Баранчиков",
+      "years": "1951",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "baranchicova-larisa-1948"
+      }
+    },
+    {
+      "id": "novikov-sergey-1917",
+      "name": "Сергей Петрович Новиков",
+      "years": "19.09.1917 - 26.11.2002",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": "сержант медаль за <<За победу над Японией>>",
+      "relationships": {
+        "partner": null,
+        "parents": [
+          "novikov-petr-1886",
+          "novikova-stepanida-1884"
+        ]
+      }
+    },
+    {
+      "id": "novikov-igor-1954",
+      "name": "Игорь Сергеевич Новиков",
+      "years": "27.03.1954",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "novikova-lybov-1956",
+        "parents": [
+          "novikov-sergey-1917",
+          "novikova-zinaida-1923"
+        ]
+      }
+    },
+    {
+      "id": "novikova-lybov-1956",
+      "name": "Любовь Александровна Новикова (Губкина)",
+      "years": "05.01.1956",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "novikov-igor-1954",
+        "parents": [
+        ]
+      }
+    },
+    {
+      "id": "novikov-yuriy-1949",
+      "name": "Юрий Сергеевич Новиков",
+      "years": "03.04.1949",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "novikova-tatyana-1949",
+        "parents": [
+          "novikov-sergey-1917",
+          "novikova-zinaida-1923"
+        ]
+      }
+    },
+    {
+      "id": "novikova-tatyana-1949",
+      "name": "Татьяна Дмитриевна Новикова (Емшанова)",
+      "years": "03.04.1949",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "novikov-yuriy-1949",
+        "parents": [
+        ]
+      }
+    },
+    {
+      "id": "nikiforova-natalya-1949",
+      "name": "Наталья Владимировна Никифоровна",
+      "years": "18.12.1949",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "novikov-yuriy-1949",
+        "parents": [
+        ]
+      }
+    },
+    {
+      "id": "novikov-nikolay-1919",
+      "name": "Николай Петрович Новиков",
+      "years": "1919 - 1938",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": null,
+        "parents": [
+          "novikov-petr-1886",
+          "novikova-stepanida-1884"
+        ]
+      }
+    },
+    {
+      "id": "novikov-grigoriy-1911",
+      "name": "Григорий Петрович Новиков",
+      "years": "1911 - 1978",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": "гвард. старшина медаль <<За боевые заслуги>> орден Красной Звезды орден Отечественной войны II ст.",
+      "relationships": {
+        "partner": "novikova-olga-1912",
+        "parents": [
+          "novikov-petr-1886",
+          "novikova-stepanida-1884"
+        ]
+      }
+    },
+    {
+      "id": "novikova-olga-1912",
+      "name": "Ольга Ивановна Новикова (Стражникова)",
+      "years": "1912 - 1979",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": "ст. лейтенант мед. службы орден Красной Звезды медаль <<За взятие Берлина>> медаль <<За победу над Германией 1941-1945>>",
+      "relationships": {
+        "partner": "novikov-grigoriy-1911"
+      }
+    },
+    {
+      "id": "novikov-vladimir-1946",
+      "name": "Владимир Григорьевич Новиков",
+      "years": "1946 - 14.12.1948",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": null,
+        "parents": [
+          "novikov-grigoriy-1911",
+          "novikova-olga-1912"
+        ]
+      }
+    },
+    {
+      "id": "baranchicova-larisa-1948",
+      "name": "Лариса Григорьевна Баранчикова (Новикова)",
+      "years": "1948",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "baranchicov-boris-1951",
+        "parents": [
+          "novikov-grigoriy-1911",
+          "novikova-olga-1912"
+        ]
+      }
+    },
+    {
+      "id": "trutneva-tatyana-1976",
+      "name": "Татьяна Борисовна Трутнева (Баранчикова)",
+      "years": "1976",
+      "birthPlace": "Иваново",
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "partner": "trutnev-igor-1969",
+        "parents": [
+          "baranchicov-boris-1951",
+          "baranchicova-larisa-1948"
+        ]
+      }
+    },
+    {
+      "id": "trutnev-aleksei-2001",
+      "name": "Алексей Игоревич Трутнев",
+      "years": "2001",
+      "birthPlace": "Иваново",
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "parents": [
+          "trutnev-igor-1969",
+          "trutneva-tatyana-1976"
+        ]
+      }
+    },
+    {
+      "id": "kamyshleycev-stepan-1850",
+      "name": "Степан Иванович Камышлейцев",
+      "years": "около 1850-1920",
+      "relationships": {
+        "partner": "kamyshleyceva-praskovya-1850"
+      }
+    },
+    {
+      "id": "kamyshleyceva-praskovya-1850",
+      "name": "Прасковья Алексеевна Камышлейцева",
+      "years": "около 1850-1920",
+      "relationships": {
+        "partner": "kamyshleycev-stepan-1850"
+      }
+    },
+    {
+      "id": "kamyshleycev-efim-1891",
+      "name": "Ефим Степанович Камышлейцев",
+      "years": "1891 - 01.10.1937",
+      "comment": "расстрелян как японский шпион реабилитирован 29.04.1960",
+      "relationships": {
+        "partner": null,
+        "parents": [
+          "kamyshleycev-stepan-1850",
+          "kamyshleyceva-praskovya-1850"
+        ]
+      }
+    },
+    {
+      "id": "kamyshleycev-aleksandr-1897",
+      "name": "Александр Степанович Камышлейцев",
+      "years": "25.02.1897-09.01.1962",
+      "comment": "медаль <<За доблестный труд в период Великой Отечественной войны.>> орден Ленина Nº99488",
+      "relationships": {
+        "partner": "kamyshleyceva-aleksandera-1899",
+        "parents": [
+          "kamyshleycev-stepan-1850",
+          "kamyshleyceva-praskovya-1850"
+        ]
+      }
+    },
+    {
+      "id": "kamyshleyceva-aleksandra-1899",
+      "name": "Александра Фёдоровна Камышлейцева (Клещева)",
+      "years": "26.04.1899-20.01.1985",
+      "comment": null,
+      "relationships": {
+        "partner": "kamyshleycev-aleksandr-1897",
+        "parents": [
+          "klechev-fedor-1850",
+          "klecheva-elena-1850"
+        ]
+      }
+    },
+    {
+      "id": "kamyshleycev-yuri-1925",
+      "name": "Юрий Александрович Камышлейцев",
+      "years": "25.12.1925-04.03.1944",
+      "comment": "красноармеец. медаль <<За отвагу>>. орден Красной Звезды погиб под г. Витебск при освобождении Белоруссии от немецко-фашистких захватчиков",
+      "relationships": {
+        "partner": null,
+        "parents": [
+          "kamyshleycev-aleksandr-1897",
+          "kamyshleyceva-aleksandra-1899"
+        ]
+      }
+    },
+    {
+      "id": "kamyshleycev-zinaida-1923",
+      "name": "Зинаида Александровна Камышлейцева",
+      "years": "15.08.1923-06.05.1998",
+      "comment": "медаль <<Ветеран труда>>",
+      "relationships": {
+        "partner": "novikov-sergey-1917",
+        "parents": [
+          "kamyshleycev-aleksandr-1897",
+          "kamyshleyceva-aleksandra-1899"
+        ]
+      }
+    },
+    {
+      "id": "klecheva-elena-1850",
+      "name": "Елена Александровна Клещева",
+      "years": "около 1850-1920",
+      "comment": null,
+      "relationships": {
+        "partner": "klechev-fedor-1850"
+      }
+    },
+    {
+      "id": "klechev-fedor-1850",
+      "name": "Фёдор Иванович Клещев",
+      "years": "около 1850-1920",
+      "comment": null,
+      "relationships": {
+        "partner": "klechevf-elena-1850"
+      }
+    },
+    {
+      "id": "novikov-aleksandr-1990",
+      "name": "Новиков Александр Юрьевич",
+      "years": "22.02.1990",
+      "birthPlace": null,
+      "burialPlace": null,
+      "comment": null,
+      "relationships": {
+        "parents": [
+          "novikov-yuriy-1949",
+          "nikiforova-natalya-1949"
+        ]
+      }
+    },
+    {
+      "id": "povolockaya-ekaterina-1973",
+      "name": "Екатерина Юрьевна Поволоцкая (Новикова)",
+      "years": "23.05.1973",
+      "relationships": {
+        "partners": [
+          "shkoda-sergey-1967",
+          "povolockiy-vladimir-1946"
+        ],
+        "parents": [
+          "novikov-yuriy-1949",
+          "novikova-tatyana-1949"
+        ]
+      }
+    },
+    {
+      "id": "shkoda-sergey-1967",
+      "name": "Сергей Викторович Шкода",
+      "years": "07.03.1967",
+      "relationships": {
+        "partner": "povolockaya-ekaterina-1973"
+      }
+    },
+    {
+      "id": "povolockaya-svetlana-1998",
+      "name": "Светлана Сергеевна Поволоцкая (Шкода)",
+      "years": "18.03.1998",
+      "relationships": {
+        "parents": [
+          "povolockaya-ekaterina-1973",
+          "shkoda-sergey-1967"
+        ]
+      }
+    },
+    {
+      "id": "povolockiy-vladimir-1946",
+      "name": "Владимир Юрьевич Поволоцкий",
+      "years": "27.04.1946",
+      "relationships": {
+        "partner": "povolockaya-ekaterina-1973"
+      }
+    },
+    {
+      "id": "povolockaya-evgeniya-2003",
+      "name": "Евгения Владимировна Поволоцкая",
+      "years": "12.10.2003",
+      "relationships": {
+        "parents": [
+          "povolockaya-ekaterina-1973",
+          "povolockiy-vladimir-1946"
+        ]
+      }
+    },
+    {
+      "id": "novikova-svetlana-1978",
+      "name": "Светлана Юрьевна Новикова",
+      "years": "07.05.1978",
+      "relationships": {
+        "partner": "gerasenkov-maksim-1976",
+        "parents": [
+          "novikov-yuriy-1949",
+          "novikova-tatyana-1949"
+        ]
+      }
+    },
+    {
+      "id": "gerasenkov-maksim-1976",
+      "name": "Максим Алексеевич Герасенков",
+      "years": "15.04.1976",
+      "relationships": {
+        "partner": "novikova-svetlana-1978"
+      }
+    },
+    {
+      "id": "gerasenkova-aleksandra-2007",
+      "name": "Александра Максимовна Герасенкова",
+      "years": "15.11.2007",
+      "relationships": {
+        "parents": [
+          "novikova-svetlana-1978",
+          "gerasenkov-maksim-1976"
+        ]
+      }
+    },
+    {
+      "id": "gerasenkov-denis-2012",
+      "name": "Денис Максимович Герасенков",
+      "years": "31.05.2012",
+      "relationships": {
+        "parents": [
+          "novikova-svetlana-1978",
+          "gerasenkov-maksim-1976"
+        ]
+      }
+    },
+    {
+      "id": "novikov-mikhail-1978",
+      "name": "Михаил Юрьевич Новиков",
+      "years": "07.05.1978",
+      "relationships": {
+        "partner": "novikova-natalya-nokhrina-1978",
+        "parents": [
+          "novikov-yuriy-1949",
+          "novikova-tatyana-1949"
+        ]
+      }
+    },
+    {
+      "id": "novikova-natalya-nokhrina-1978",
+      "name": "Наталья Германовна Новикова (Нохрина)",
+      "years": "29.01.1978",
+      "relationships": {
+        "partner": "novikov-mikhail-1978"
+      }
+    },
+    {
+      "id": "novikov-sergey-2003",
+      "name": "Сергей Михайлович Новиков",
+      "years": "05.12.2003",
+      "relationships": {
+        "parents": [
+          "novikov-mikhail-1978",
+          "novikova-natalya-nokhrina-1978"
+        ]
+      }
+    },
+    {
+      "id": "novikov-mikhail-2011",
+      "name": "Михаил Михайлович Новиков",
+      "years": "17.07.2011",
+      "relationships": {
+        "parents": [
+          "novikov-mikhail-1978",
+          "novikova-natalya-nokhrina-1978"
+        ]
+      }
+    },
+    {
+      "id": "novikov-konstantin-1978",
+      "name": "Константин Игоревич Новиков",
+      "years": "17.09.1978",
+      "relationships": {
+        "partner": "novikova-nadezhda-1986",
+        "parents": [
+          "novikov-igor-1954",
+          "novikova-lybov-1956"
+        ]
+      }
+    },
+    {
+      "id": "novikov-aleksandr-1986",
+      "name": "Александр Игоревич Новиков",
+      "years": "06.02.1986",
+      "relationships": {
+        "partner": "novikova-olga-1987",
+        "parents": [
+          "novikov-igor-1954",
+          "novikova-lybov-1956"
+        ]
+      }
+    },
+    {
+      "id": "novikova-olga-1987",
+      "name": "Ольга Леонидовна Новикова (Линникова)",
+      "years": "27.04.1987",
+      "relationships": {
+        "partner": "novikov-aleksandr-1986",
+        "parents": [
+        ]
+      }
+    },
+    {
+      "id": "novikova-nadezhda-1986",
+      "name": "Надежда Владиславовна Новикова (Карманович)",
+      "years": "16.03.1986",
+      "relationships": {
+        "partner": "novikov-konstantin-1978"
+      }
+    },
+    {
+      "id": "novikov-lev-2012",
+      "name": "Лев Константинович Новиков",
+      "years": "05.03.2012",
+      "relationships": {
+        "parents": [
+          "novikov-konstantin-1978",
+          "novikova-nadezhda-1986"
+        ]
+      }
+    },
+    {
+      "id": "novikova-ekaterina-2020",
+      "name": "Екатерина Александровна Новикова",
+      "years": "05.01.2020",
+      "relationships": {
+        "parents": [
+          "novikov-aleksandr-1986",
+          "novikova-olga-1987"
+        ]
+      }
+    },
+    {
+      "id": "novikov-andrey-2016",
+      "name": "Андрей Александрович Новиков",
+      "years": "30.07.2016",
+      "relationships": {
+        "parents": [
+          "novikov-aleksandr-1986",
+          "novikova-olga-1987"
+        ]
+      }
     }
-]
+  ]
+}
